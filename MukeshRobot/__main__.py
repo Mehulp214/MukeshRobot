@@ -410,41 +410,42 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             ),
         )
     elif query.data == "mukesh_support":
-        query.message.edit_caption("**๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀ**"
-            f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
+    query.message.edit_caption(
+        "**๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀ**"
+        f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(
+            [
                 [
-                    [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
-                    [
-                        InlineKeyboardButton(
-                            text="🏡 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs 🍷", url="https://t.me/mehulsupport"
+                    InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
+                    InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
+                    InlineKeyboardButton(text="💳", callback_data="source_"),
+                    InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
+                    InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="🏡 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴜᴩᴅᴀᴛᴇs 🍷", url="https://t.me/mehulsupport"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                    ),
+                    InlineKeyboardButton(
+                        text="ɢɪᴛʜᴜʙ 🍹", url=""
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(text="◁", callback_data="mukesh_"),
+                ],
+            ]
+        ),
+    )
 
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
-                        ),
-                        InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ 🍹", url=""
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_"),
-                    ],
-                ]
-            ),
-        )
     elif query.data == "mukesh_back":
         first_name = update.effective_user.first_name 
         query.message.edit_caption(PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats()),
