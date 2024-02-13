@@ -428,7 +428,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="ᴜᴩᴅᴀᴛᴇs 🍷", url="https://t.me/mehulsupport"
-"
+
                         ),
                     ],
                     [
