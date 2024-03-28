@@ -12,7 +12,7 @@ class Config(object):
     SUPPORT_CHAT = "mehulsupport"  # Your own group for support, do not add the @
     START_IMG = ""
     EVENT_LOGS = ()  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    MONGO_DB_URI= "mongodb+srv://mehul29yt:TfJv3xbxaSFHfSXf@mehul.cfuyvdj.mongodb.net/"
+    MONGO_DB_URI= "mongodb+srv://Iwnxnke:Mehul_29@cluster0.k2knxi1.mongodb.net/"
     # RECOMMENDED
     DATABASE_URL = "postgres://zdrlewmo:EJ481vnCEsYiI4QolDvdlYceJQFXXS_m@john.db.elephantsql.com/zdrlewmo"  # A sql database url from elephantsql.com
     CASH_API_KEY = (
