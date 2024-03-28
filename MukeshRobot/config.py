@@ -10,7 +10,7 @@ class Config(object):
     OWNER_ID = 1932612943 # If you dont know, run the bot and do /id in your private chat with it, also an integer
     
     SUPPORT_CHAT = "mehulsupport"  # Your own group for support, do not add the @
-    START_IMG = ""
+    START_IMG = "https://te.legra.ph/file/544002985a33eb016ec69.jpg"
     EVENT_LOGS = ()  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     MONGO_DB_URI= "mongodb+srv://Iwnxnke:Mehul_99@cluster0.k2knxi1.mongodb.net/"
     # RECOMMENDED
