@@ -6,8 +6,8 @@ class Config(object):
 
     API_ID = "23322236" # integer value, dont use ""
     API_HASH = "e7cc5d762451079c046202fc1d926677"
-    TOKEN = "6022216703:AAGX95Tiv7H5TykgEUgGUKb6jfdl0eti5BE"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1932612943 # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    TOKEN = "7127103609:AAFPKqWV3FD3_Izx4etd5LZXYK9OXzj0-F8"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 7170648639 # If you dont know, run the bot and do /id in your private chat with it, also an integer
     
     SUPPORT_CHAT = "mehulsupport"  # Your own group for support, do not add the @
     START_IMG = "https://te.legra.ph/file/544002985a33eb016ec69.jpg"
